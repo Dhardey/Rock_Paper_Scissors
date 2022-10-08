@@ -4,9 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RPS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
 </head>
 <body>
-  <script src="app.js"></script>
+  <header class = "header">
+    <h1>Rock Paper Scissors</h1>
+  </header>
+  <div class="main">
+    <div class="play-board">
+        <h2 id = "msg">Choose your weapon!</h2>
+        <span id = "rounds">First to 5 wins!</span>
+        <div class="score-board">
+          <div class="box">
+            <div class="player-side">
+              <img id="player" src="rps_img/avatar.png" alt="">
+            </div>
+            <h4>Player : <span id="pScore">0</span></h4>
+          </div>
+          <div class="box">
+            <div class="comp-side">
+              <img id="comp" src="rps_img/computer.png" alt="">
+            </div>
+            <h4>Computer : <span id="cScore">0</span></h4>
+          </div>
+          </div>
+        </div>
+    </div>
+    <div class="buttons">
+      <button class = "rock">
+        <img class = "shake" src="rps_img/rocks.png" alt="">
+      </button>
+      <button class = "paper">
+        <img class = "shake" src="rps_img/paper.png" alt="">
+      </button>
+      <button class = "scissors">
+        <img class = "shake" src="rps_img/scissors.png" alt="">
+      </button>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <div id="endgame">
+    <h3 id="endgame-msg">Testing</h3>
+    <button id="replay">Play Again?</button>
+  </div>
+</div>
+
+
 </body>
+
+<script src="app.js"></script>
 </html>

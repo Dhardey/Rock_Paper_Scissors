@@ -1,0 +1,159 @@
+body{
+    font-family: 'Lemon/Milk', sans-serif;
+    font-family: 'Lemon/Milk light', sans-serif;
+    /*8background: linear-gradient(90deg, #cfecd0, #ffc5ca);*/
+    background: linear-gradient(-45deg, #DEFCF9, #CADEFC, #C3BEF0, #CCA8E9 );
+	background-size: 400% 400%;
+	animation: gradient 3.5s ease infinite;
+
+}
+
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+
+h1{
+    font-family: 'Lemon/Milk', sans-serif;
+    font-family: 'Lemon/Milk light', sans-serif;
+    text-align: center;
+    word-spacing: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+h2, h3{
+    font-family: 'Lemon/Milk', sans-serif;
+    font-family: 'Lemon/Milk light', sans-serif;
+    text-align: center;
+}
+
+.main{
+    text-align: center;
+}
+
+.score-board{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+.box{
+    width: 170px;
+}
+
+h4{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rock, .paper, .scissors{
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.shake:hover {
+        /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+      
+        /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+      
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+
+#endgame{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #FFF3EB;
+    text-align: center;
+    font-size: 30px;
+    user-select: none;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+
+#endgame.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+  }
+
+#overlay.active, #endgame.active {
+    display: block;
+  }
+#endgame{
+    background-color: #0D1B2A;
+    color: #E0E1DD;
+}
+#replay {
+    background-color: #415A77;
+    color: #E0E1DD;
+    font-weight: bolder;
+    padding: 17px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15%;
+    font-size: 27px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#replay:hover {
+    background-color: #778DA9;
+}
+
+
