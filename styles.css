@@ -21,16 +21,12 @@ body{
 }
 
 h1{
-    font-family: 'Lemon/Milk', sans-serif;
-    font-family: 'Lemon/Milk light', sans-serif;
     text-align: center;
     word-spacing: 100px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 h2, h3{
-    font-family: 'Lemon/Milk', sans-serif;
-    font-family: 'Lemon/Milk light', sans-serif;
     text-align: center;
 }
 
